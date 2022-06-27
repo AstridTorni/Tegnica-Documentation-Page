@@ -1,0 +1,122 @@
+main{
+	line-height: 1.5;
+	margin-top: 30px;
+	margin-left: 20px;
+	position: absolute;
+;
+}
+
+
+/* header */
+
+#navbar{
+	min-width: 290px;
+	width: 300px;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-right: 1px solid black;
+	line-height: 1.5;
+	overflow-x:scroll; 
+}
+
+
+#navbar header{
+	font-size: 30px;
+	font-weight: 400;
+	padding: 12px;
+	border-bottom: 1px solid black;
+}
+
+#navbar li{
+   padding: 10px 25px;
+}
+
+#navbar li:not(:last-child){
+	content: "";
+	border-bottom: 1px solid black;
+}
+
+
+#navbar a:link {
+  color: black;
+}
+
+/* visited link */
+#navbar a:visited {
+  color: black;
+}
+
+/* mouse over link */
+#navbar a:hover {
+  color: black;
+}
+
+/* selected link */
+#navbar a:active {
+  color: black;
+}
+
+/* Body 2 */
+#main-doc{
+	padding: 0 20px 30px 20px;
+	margin-left: 310px;
+}
+.main-section{
+    margin-bottom: 35px;
+    min-width: 300px;
+}
+.main-section header{
+	font-size: 28px;
+	margin-bottom: 30px;
+	display: block;
+}
+#main-doc p{
+	margin-bottom: 15px;
+	margin-left: 25px;
+}
+#main-doc ul{
+	margin-left: 70px;
+	list-style: disc;
+}
+
+code{
+	background-color: rgb(240,240,240);
+	font-family: verdana;
+	font-size: 13px;
+	padding: 20px;
+	border-radius: 8px;
+	margin: 15px 35px 15px 45px;
+	letter-spacing: 1px;
+	display: block;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 750px) {
+   .wraper{
+   	display: flex;
+   	flex-direction: column;
+   	align-items: center;
+   }
+   #navbar{
+	min-width: 290px;
+	width: 100vw;
+	height: 300px;
+	position: absolute;
+	border-right: 1px solid black;
+	line-height: 1.5;
+	overflow-x:scroll; 
+}
+#main-doc{
+	padding: 0 20px 30px 20px;
+	margin-left: 0px;
+	margin-top: 325px;
+	min-width: 290px;
+	position: absolute;
+	left: 0;
+}
+}
